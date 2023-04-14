@@ -55,7 +55,7 @@ export default function Reviews() {
                         alignItems: 'center',
                     }
                 }>
-                    <Grid container sx={
+                    <Grid  sx={
                         {
                             display: 'flex',
                             flexDirection: 'column',
@@ -64,8 +64,8 @@ export default function Reviews() {
                             alignItems: 'center',
                         }
                     }>
-                        <Grid item>
-                            <Grid container sx={
+                        <Grid >
+                            <Grid item sx={
                                 {
                                     display: 'flex',
                                     flexDirection: 'row',
@@ -123,7 +123,7 @@ export default function Reviews() {
                             width: '75%',
                         }
                     }>
-                        <Grid item>
+                        <Grid container>
                             <Grid container sx={
                                 {
                                     display: 'flex',
@@ -163,9 +163,178 @@ export default function Reviews() {
                             </Typography>
                         </Grid>
                     </Grid>
-                </Carousel.Slide>                        <Carousel.Slide>3</Carousel.Slide>
-                <Carousel.Slide>4</Carousel.Slide>
-                <Carousel.Slide>5</Carousel.Slide>
+                </Carousel.Slide>
+                <Carousel.Slide sx={
+                {
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }
+            }>
+                <Grid container sx={
+                    {
+                        display: 'flex',
+                        flexDirection: 'column',
+                        width: '75%',
+                    }
+                }>
+                    <Grid container>
+                        <Grid container sx={
+                            {
+                                display: 'flex',
+                                flexDirection: 'row',
+                                justifyContent: 'center',
+                            }
+                        } >
+                            <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                            <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                            <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                            <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                            <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                        </Grid>
+                        <Typography variant="h1" lineHeight={2} component="h2" sx={
+                            {
+                                fontSize: 20,
+                                marginTop: '5rem',
+                                textAlign: 'center'
+
+
+                            }
+                        }>
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
+                            "Incredible impact. I didn’t know how much our website speed was bogging us down. OptimizedHorizons has increased all our numbers across the board."
+                        </Typography>
+                            <Typography variant="h1" lineHeight={2} component="h2" sx={
+                            {
+                                fontSize: 14,
+                                color: '#EDEDED',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                                marginTop: '2rem',
+                                textAlign: 'center'
+
+                            }
+                        }>
+                            Jeff Rogosin
+                        </Typography>
+                    </Grid>
+                </Grid>
+            </Carousel.Slide>
+                <Carousel.Slide sx={
+                    {
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                    }
+                }>
+                    <Grid container sx={
+                        {
+                            display: 'flex',
+                            flexDirection: 'column',
+                            width: '75%',
+                        }
+                    }>
+                        <Grid container>
+                            <Grid container sx={
+                                {
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    justifyContent: 'center',
+                                }
+                            } >
+                                <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                                <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                                <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                                <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                                <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                            </Grid>
+                            <Typography variant="h1" lineHeight={2} component="h2" sx={
+                                {
+                                    fontSize: 20,
+                                    marginTop: '5rem',
+                                    textAlign: 'center'
+
+
+                                }
+                            }>
+                                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                                "Super valuable service and I love the founders. Seeing up and coming young entrepreneurs always brings a smile to my face."
+                            </Typography>
+                            <Typography variant="h1" lineHeight={2} component="h2" sx={
+                                {
+                                    fontSize: 14,
+                                    color: '#EDEDED',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    marginTop: '2rem',
+                                    textAlign: 'center'
+
+                                }
+                            }>
+                                Rebbeca Spindel
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                </Carousel.Slide>
+                <Carousel.Slide sx={
+                    {
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                    }
+                }>
+                    <Grid container sx={
+                        {
+                            display: 'flex',
+                            flexDirection: 'column',
+                            width: '75%',
+                        }
+                    }>
+                        <Grid container>
+                            <Grid container sx={
+                                {
+                                    display: 'flex',
+                                    flexDirection: 'row',
+                                    justifyContent: 'center',
+                                }
+                            } >
+                                <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                                <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                                <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                                <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                                <Image src={'/iconfeather.svg'} alt={'ellipse'} width={50} height={50} className={styles.svg1} />
+                            </Grid>
+                            <Typography variant="h1" lineHeight={2} component="h2" sx={
+                                {
+                                    fontSize: 20,
+                                    marginTop: '5rem',
+                                    textAlign: 'center'
+
+
+                                }
+                            }>
+                                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                                "I’ve had a great experience with OptimizedHorizons. Speed optimization + SEO took my site to the next level in terms of reach and conversions."
+                            </Typography>
+                            <Typography variant="h1" lineHeight={2} component="h2" sx={
+                                {
+                                    fontSize: 14,
+                                    color: '#EDEDED',
+                                    justifyContent: 'center',
+                                    alignItems: 'center',
+                                    marginTop: '2rem',
+                                    textAlign: 'center'
+
+                                }
+                            }>
+                                Ethan Chen
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                </Carousel.Slide>
             </Carousel>
         </Grid>
     )

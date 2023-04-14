@@ -1,4 +1,4 @@
-import {Divider, Grid, Typography, useMediaQuery} from "@mui/material";
+import { Grid, Typography, useMediaQuery} from "@mui/material";
 import GroupAddIcon from "@mui/icons-material/GroupAdd";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
@@ -7,8 +7,6 @@ import CompareArrowsIcon from "@mui/icons-material/CompareArrows";
 import MobileFriendlyIcon from "@mui/icons-material/MobileFriendly";
 import {IBM_Plex_Sans} from "@next/font/google";
 import Image from "next/image";
-
-const IBM = IBM_Plex_Sans( { weight: "400", subsets: ['latin'] } )
 
 export default function SpeedMatters() {
     let isMobile = useMediaQuery('(max-width:1000px)');
@@ -28,11 +26,10 @@ export default function SpeedMatters() {
                     flexDirection: 'column',
                 }
             }>
-                <Typography variant="h1" lineHeight={.9} component="h2" sx={
+                <Typography variant="h1" sx={
                     {
                         alignContent: 'center',
                         alignSelf: 'center',
-                        fontFamily: IBM,
                         fontSize: 42,
                         fontWeight: 400,
                         paddingTop: '5rem',
@@ -42,7 +39,7 @@ export default function SpeedMatters() {
                 }>
                     Why Speed Matters.
                 </Typography>
-                <Typography variant="h1" lineHeight={.9} component="h2" sx={
+                <Typography variant="h1" lineHeight={.9} sx={
                     {
                         alignContent: 'center',
                         alignSelf: 'center',
@@ -76,7 +73,7 @@ export default function SpeedMatters() {
                         display: isMobile ? 'none' : 'block',
                     }
                 } />
-            <Grid item xs={9} spacing={3} sx={
+            <Grid item xs={9} sx={
                 {
                     width: '80%',
                     height: '100%',
@@ -109,7 +106,7 @@ export default function SpeedMatters() {
                             marginBottom: '1rem',
                         }
                     } />
-                    <Typography variant="h1" lineHeight={.9} component="h2" sx={
+                    <Typography variant="h1" lineHeight={.9}  sx={
                         {
                             fontSize: 21,
                             fontWeight: 400,
@@ -118,7 +115,7 @@ export default function SpeedMatters() {
                     }>
                         Enhanced User Experience
                     </Typography>
-                    <Typography lineHeight={.9} component="h2" sx={
+                    <Typography lineHeight={.9}  sx={
                         {
                             fontSize: 16,
                             fontWeight: 40,
@@ -147,7 +144,7 @@ export default function SpeedMatters() {
                             marginBottom: '1rem',
                         }
                     } />
-                    <Typography variant="h1" lineHeight={.9} component="h2" sx={
+                    <Typography variant="h1" lineHeight={.9}  sx={
                         {
                             fontSize: 21,
                             fontWeight: 400,
@@ -157,7 +154,7 @@ export default function SpeedMatters() {
                     }>
                         Google Rankings
                     </Typography>
-                    <Typography lineHeight={.9} component="h2" sx={
+                    <Typography lineHeight={.9}  sx={
                         {
                             fontSize: 16,
                             fontWeight: 40,
@@ -186,7 +183,7 @@ export default function SpeedMatters() {
                             marginBottom: '1rem',
                         }
                     } />
-                    <Typography variant="h1" lineHeight={.9} component="h2" sx={
+                    <Typography variant="h1" lineHeight={.9}  sx={
                         {
                             fontSize: 21,
                             fontWeight: 400,
@@ -196,7 +193,7 @@ export default function SpeedMatters() {
                     }>
                         Conversion Rate
                     </Typography>
-                    <Typography lineHeight={.9} component="h2" sx={
+                    <Typography lineHeight={.9}  sx={
                         {
                             fontSize: 16,
                             fontWeight: 40,
@@ -210,7 +207,7 @@ export default function SpeedMatters() {
                 </Grid>
 
             </Grid>
-            <Grid item xs={9} spacing={3} sx={
+            <Grid item xs={9} sx={
                 {
                     width: '80%',
                     height: '100%',
@@ -243,7 +240,7 @@ export default function SpeedMatters() {
                             marginBottom: '1rem',
                         }
                     } />
-                    <Typography variant="h1" lineHeight={.9} component="h2" sx={
+                    <Typography variant="h1" lineHeight={.9}  sx={
                         {
                             fontSize: 21,
                             fontWeight: 400,
@@ -252,7 +249,7 @@ export default function SpeedMatters() {
                     }>
                         Reduced Bounce Rates
                     </Typography>
-                    <Typography lineHeight={.9} component="h2" sx={
+                    <Typography lineHeight={.9}  sx={
                         {
                             fontSize: 16,
                             fontWeight: 40,
@@ -283,7 +280,7 @@ export default function SpeedMatters() {
                             marginBottom: '1rem',
                         }
                     }/>
-                    <Typography variant="h1" lineHeight={.9} component="h2" sx={
+                    <Typography variant="h1" lineHeight={.9}  sx={
                         {
                             fontSize: 21,
                             fontWeight: 400,
@@ -292,7 +289,7 @@ export default function SpeedMatters() {
                     }>
                         Competitive Edge
                     </Typography>
-                    <Typography lineHeight={.9} component="h2" sx={
+                    <Typography lineHeight={.9}  sx={
                         {
                             fontSize: 16,
                             fontWeight: 40,
@@ -321,7 +318,7 @@ export default function SpeedMatters() {
                             marginBottom: '1rem',
                         }
                     } />
-                    <Typography variant="h1" lineHeight={.9} component="h2" sx={
+                    <Typography variant="h1" lineHeight={.9}  sx={
                         {
                             fontSize: 21,
                             fontWeight: 400,
@@ -330,7 +327,7 @@ export default function SpeedMatters() {
                     }>
                         Mobile Optimization
                     </Typography>
-                    <Typography lineHeight={.9} component="h2" sx={
+                    <Typography lineHeight={.9}  sx={
                         {
                             fontSize: 16,
                             fontWeight: 40,

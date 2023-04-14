@@ -151,6 +151,7 @@ export default function FrontPage() {
                             {
                                 paddingTop: '2rem',
                                 paddingRight: '35%',
+                                position: 'relative',
 
 
                             }

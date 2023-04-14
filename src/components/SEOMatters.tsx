@@ -77,7 +77,7 @@ export default function SpeedMatters() {
                     }
                 } />
 
-                <Grid item xs={9} spacing={3} sx={
+                <Grid item xs={9}  sx={
                 {
                     width: '80%',
                     height: '100%',
@@ -211,7 +211,7 @@ export default function SpeedMatters() {
                 </Grid>
 
             </Grid>
-                <Grid item xs={9} spacing={3} sx={
+                <Grid item xs={9}  sx={
                     {
                         width: '80%',
                         height: '100%',

@@ -65,19 +65,13 @@ export default function Home() {
             >
                 {value === index && (
                     <Box sx={{ p: 3 }}>
-                        <Typography>{children}</Typography>
+                        {children}
                     </Box>
                 )}
             </div>
         );
     }
 
-    function a11yProps(index: number) {
-        return {
-            id: `simple-tab-${index}`,
-            'aria-controls': `simple-tabpanel-${index}`,
-        };
-    }
 
 
     const theme = createTheme({
@@ -110,28 +104,21 @@ export default function Home() {
             } >
             <ThemeProvider theme={theme}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-                <Tab sx={
-                    {
-                        width: '15rem',
-                    }
-                } label="SEO" />
-                <Tab sx={
-                           {
-                               width: '15rem',
-                           }
-                       }  label="Optimization" />
+                <Tab label="SEO" />
+                <Tab   label="Optimization" />
             </Tabs>
             <TabPanel value={value} index={0}>
-                <SpeedMatters />
+                <div>
+                   <SpeedMatters />
+                </div>
             </TabPanel>
             <TabPanel value={value} index={1}>
-                <SEOMatters />
+                <div>
+                  <SEOMatters />
+                </div>
             </TabPanel>
             </ThemeProvider>
             </Grid>
-
-
-
             <Quote2 />
             <Call />
             <Reviews />
