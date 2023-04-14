@@ -11,6 +11,7 @@ import moment from "moment";
 export default function Call() {
     const today = moment(new Date().getDate(),'DD/MM/YYYY')
     const [date, setDate] = useState(today)
+    // @ts-ignore
     return (
         <Grid container sx={
             {
@@ -77,6 +78,7 @@ export default function Call() {
                 <LocalizationProvider dateAdapter={AdapterMoment}>
                     <DateCalendar
                         minDate={today}
+                        // @ts-ignore
                         onChange={(date) => setDate(date)}
                         sx={
                             {

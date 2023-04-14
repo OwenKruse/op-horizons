@@ -32,6 +32,7 @@ export default function Reviews() {
                     textAlign: 'center',
                 }
             }>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 Don't just take our word for it
             </Typography>
             <Carousel sx={
@@ -145,6 +146,7 @@ export default function Reviews() {
 
                                 }
                             }>
+                                {/* eslint-disable-next-line react/no-unescaped-entities */}
                                 "The team at OptimizedHorizons truly understands the art of website optimization. Their tailored solutions boosted my site's performance and user experience, leaving my competitors in the dust!"                                 </Typography>
                             <Typography variant="h1" lineHeight={2} component="h2" sx={
                                 {

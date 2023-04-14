@@ -84,6 +84,7 @@ export default function FrontPage() {
                                 color: '#A1A1AA',
                             }
                         } >
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
                             Unlock Your Website's Full Potential with OptimizedHorizons - Elevate,
                             Accelerate, and Dominate the Digital Landscape.
                         </Typography>

@@ -55,6 +55,7 @@ export default function SpeedMatters() {
 
                     }
                 }>
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                     Website speed is a critical factor in today's fast-paced digital landscape, and its importance for businesses cannot be overstated.
                 </Typography>
             </Grid>
@@ -259,6 +260,7 @@ export default function SpeedMatters() {
                         }
                     }
                     >
+                        {/* eslint-disable-next-line react/no-unescaped-entities */}
                         A fast-loading website retains visitors longer, decreasing the likelihood they'll leave without engaging with your content or making a purchase.
                     </Typography>
                 </Grid>
