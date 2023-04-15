@@ -320,7 +320,8 @@ export default function PriceMobile() {
                             </Grid>
                             <Button
                                 onClick={() => {
-                                    router.push('/contact')
+                                    router.push('/contact',
+                                        )
                                 }}
                                 sx={
                                 {

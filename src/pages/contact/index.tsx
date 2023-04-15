@@ -10,11 +10,24 @@ import {
 } from '@mui/material';
 import { createTheme, ThemeProvider} from "@mui/material";
 import {useRouter} from "next/router";
-
+import PlanGroup from "@/components/PlanGroup";
 import Header2 from "@/components/Header2";
-export default function Contact() {
+import React from "react";
+export default function Contact({choice}) {
+    if (choice) {
+        console.log(choice)
+    }
+
+
     const router = useRouter();
     let isMobile = useMediaQuery('(max-width:1000px)');
+
+    const [selected, setSelected] = React.useState(0);
+
+    // @ts-ignore
+    const handleChange = (event, newValue) => {
+        setSelected(newValue);
+    }
 
     const theme = createTheme({
         palette: {
@@ -41,7 +54,7 @@ export default function Contact() {
             }
         }>
             <Header2 />
-            <Grid container xs={isMobile ? 12 : 4} sx={
+            <Grid item xs={isMobile ? 12 : 4} sx={
                 {
                     display: 'flex',
                     flexDirection: 'column',
@@ -233,72 +246,8 @@ export default function Contact() {
                                 services.
                             </Typography>
                     </Grid>
-                            <ButtonGroup sx={
-                                {
-                                    display: 'flex',
-                                    flexDirection: 'row',
-                                    justifySelf: 'center',
-                                    alignSelf: 'center',
-                                }
-                            } aria-label="outlined primary button group">
-                                <Button sx={
-                                    {
-                                        justifySelf: 'end',
-                                        alignSelf: 'center',
-                                        marginTop: 'auto',
-                                        color: '#fff',
+                    <PlanGroup />
 
-                                        width: '7rem',
-                                        height: '3rem',
-                                        // Round corners
-                                        // border: double 4px transparent;
-                                        // border-radius: 80px;
-                                        // background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
-                                        // background-origin: border-box;
-                                        // background-clip: padding-box, border-box;
-                                        border: "double 1px transparent",
-                                        backgroundImage: "linear-gradient(#18181B, #18181B), radial-gradient(circle at top left, #6DDCFF,#7F60F9)",
-                                        backgroundOrigin: "border-box",
-                                        backgroundClip: "padding-box, border-box",
-                                    }
-                                }>Speed</Button>
-                                <Button sx={
-                                    {
-                                        width: '10rem',
-                                        justifySelf: 'center',
-                                        alignSelf: 'center',
-                                        marginTop: '1.5rem',
-                                        // Linear Gradient Background
-                                        backgroundImage: "linear-gradient(90deg, #6DDCFF,#7F60F9)",
-
-                                        color: '#fff',
-
-                                        height: '3rem',
-
-                                    }
-                                }>Complete</Button>
-                                <Button sx={
-                                    {
-                                        justifySelf: 'end',
-                                        alignSelf: 'center',
-                                        marginTop: 'auto',
-                                        color: '#fff',
-
-                                        width: '7rem',
-                                        height: '3rem',
-                                        // Round corners
-                                        // border: double 4px transparent;
-                                        // border-radius: 80px;
-                                        // background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
-                                        // background-origin: border-box;
-                                        // background-clip: padding-box, border-box;
-                                        border: "double 1px transparent",
-                                        backgroundImage: "linear-gradient(#18181B, #18181B), radial-gradient(circle at top left, #6DDCFF,#7F60F9)",
-                                        backgroundOrigin: "border-box",
-                                        backgroundClip: "padding-box, border-box",
-                                    }
-                                }>Search</Button>
-                            </ButtonGroup>
                         </Grid>
                 <Button sx={
                     {
@@ -306,7 +255,7 @@ export default function Contact() {
                         alignSelf: 'center',
                         color: '#fff',
                         width: '80%',
-                        marginTop: '5rem',
+                        marginTop: '2.5rem',
                         marginBottom: '5rem',
 
                         height: '3rem',
