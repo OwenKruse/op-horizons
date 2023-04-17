@@ -7,10 +7,12 @@ import {Grid} from "@mui/material";
 function PlanGroup() {
     const [selectedButton, setSelectedButton] = useState('Complete');
 
+    // @ts-ignore
     const handleClick = (button) => {
         setSelectedButton(button);
     };
 
+    // @ts-ignore
     const renderArrow = (button) => {
         return selectedButton === button ? <ArrowUpwardIcon sx={{ color: '#7F60F9',
             justifySelf: 'center', alignSelf: 'center', marginTop: 'auto', marginBottom: 'auto'

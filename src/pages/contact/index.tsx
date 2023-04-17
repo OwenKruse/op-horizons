@@ -13,6 +13,7 @@ import {useRouter} from "next/router";
 import PlanGroup from "@/components/PlanGroup";
 import Header2 from "@/components/Header2";
 import React from "react";
+// @ts-ignore
 export default function Contact({choice}) {
     if (choice) {
         console.log(choice)
