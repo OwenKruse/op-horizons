@@ -107,12 +107,12 @@ export default function Home() {
                 <Tab label="SEO" />
                 <Tab   label="Optimization" />
             </Tabs>
-            <TabPanel value={value} index={0}>
+            <TabPanel value={value} index={1}>
                 <div>
                    <SpeedMatters />
                 </div>
             </TabPanel>
-            <TabPanel value={value} index={1}>
+            <TabPanel value={value} index={0}>
                 <div>
                   <SEOMatters />
                 </div>
