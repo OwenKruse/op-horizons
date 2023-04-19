@@ -74,6 +74,11 @@ export default function SpeedMatters() {
                 <Image src={'/lines.svg'} alt={'lines'} fill style={
                     {
                         display: isMobile ? 'none' : 'block',
+                        position: 'absolute',
+                        top: '0',
+                        left: '0',
+                        objectFit: 'cover',
+                        scale: '.8',
                     }
                 } />
 

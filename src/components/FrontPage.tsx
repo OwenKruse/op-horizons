@@ -26,7 +26,7 @@ export default function FrontPage() {
                             alignSelf: 'center',
                         }
                     } >
-                        <video width={"100%"} height={"100%"} loop autoPlay>
+                        <video width={"100%"} height={"100%"} playsInline autoPlay muted loop>
                             <source src="/heading-video.mp4" type="video/mp4" />
                         </video>
                     </Grid>
@@ -123,7 +123,6 @@ export default function FrontPage() {
                                 paddingTop: isMobile ? '1rem' : '8rem',
                             }
                         } >
-                            Trusted by 5k+ users
                         </Typography>
                         <Grid sx={
                             {
@@ -142,7 +141,7 @@ export default function FrontPage() {
                                     color: '#71717A',
                                 }
                             } >
-                                (1.4k Reviews)
+                                (3 Reviews)
                             </Typography>
                         </Grid>
                     </Grid>
@@ -172,7 +171,7 @@ export default function FrontPage() {
                                     color: "white",
                                     marginRight: 2,
                                 }
-                            } width="80%" height="99%" loop autoPlay>
+                            } width="80%" height="99%" loop muted playsInline autoPlay>
                                 <source src="/heading-video.mp4" type="video/mp4" />
                             </video>
                         </Grid>

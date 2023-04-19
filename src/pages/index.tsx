@@ -64,7 +64,7 @@ export default function Home() {
                 {...other}
             >
                 {value === index && (
-                    <Box sx={{ p: 3 }}>
+                    <Box>
                         {children}
                     </Box>
                 )}
@@ -98,10 +98,18 @@ export default function Home() {
             <Grid container sx={
                 {
                     display: 'flex',
+                    position: 'relative',
+                    flexDirection: 'column',
+                    width: '100%',
+                    height: '100%',
                     justifyContent: 'center',
                     alignContent: 'center',
+                    justifySelf: 'center',
+                    alignSelf: 'center',
+                    backgroundColor: '#000',
+                    padding: '2rem',
                 }
-            } >
+            }>
             <ThemeProvider theme={theme}>
             <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                 <Tab label="SEO" />
@@ -117,6 +125,7 @@ export default function Home() {
                   <SEOMatters />
                 </div>
             </TabPanel>
+
             </ThemeProvider>
             </Grid>
             <Quote2 />
