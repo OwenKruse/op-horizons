@@ -95,10 +95,9 @@ export default function Home() {
         <main className={styles.main}>
             <FrontPage />
             <Quote1 />
-            <Grid container sx={
+            <Grid sx={
                 {
                     display: 'flex',
-                    position: 'relative',
                     flexDirection: 'column',
                     width: '100%',
                     height: '100%',
@@ -106,8 +105,7 @@ export default function Home() {
                     alignContent: 'center',
                     justifySelf: 'center',
                     alignSelf: 'center',
-                    backgroundColor: '#000',
-                    padding: '2rem',
+                    alignItems: 'center',
                 }
             }>
             <ThemeProvider theme={theme}>
